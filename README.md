@@ -14,9 +14,6 @@ git config --global user.name "koke666"
 
 git config --global user.email "yxx66720880@163.com"
 
-![img](git1.png)
-
-
 
 3.  生成密钥,连接本地仓库和远程仓库
 
@@ -184,19 +181,9 @@ BPMN将元素分为5个基本类别：
 
 ![img](bpmn1.png)
 
-事件有两种：开始和结束事件，BPMN的XML表示如下：
+事件有两种：开始和结束事件，每个流程都是以process为标记，startEvent和endEvent表示开始结束事件。
 
-```<process id="myprocess-Id" name="myprocess" isExecutable="true">
-<startEvent id="start"></startEvent>```
-
-```<endEvent id="end"></endEvent>
-</process>```
-
-每个流程都是以process为标记，startEvent和endEvent表示开始结束事件。
-
-活动/ 任务的表示如下，这是一个用户任务，也就是需要用户完成的任务，流程会在此等待用户介入：
-
-<userTask id="userTaskId" activiti:assignee="PPP" activiti:formKey="UUU"> </userTask>
+活动/ 任务的表示如下，这是一个用户任务，也就是需要用户完成的任务，流程会在此等待用户介入。
 
 一般用户任务和分配者和表单有关，这里分配者和表单都是activiti的自定义数据方式。
 
