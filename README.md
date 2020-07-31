@@ -77,7 +77,7 @@ git merge //合并分支
 
 填完用户名和密码成功登录后，服务器的在session中标记登录状态为yes，并在浏览器中写入cookie。下次再访问时，请求中会带上这个Cookie，服务端会根据这个Cookie找到对应的session，通过session来判断这个用户是否登录。
 
-<img src="https://yqfile.alicdn.com/555f1a6856468578020ea0486f563b3633813050.png" alt="image" style="zoom:67%;" />
+![img](https://yqfile.alicdn.com/555f1a6856468578020ea0486f563b3633813050.png)
 
 ### 同域下单点登录
 
@@ -95,7 +95,7 @@ git merge //合并分支
 - sso登录以后，可以将Cookie的域设置为顶域，即a.com，这样所有子域的系统都可以访问到顶域的Cookie。（在设置Cookie时，只能设置顶域和自己的域，不能设置其他的域。）
 - Session 共享，如Spring-Session。
 
-<img src="https://yqfile.alicdn.com/4e31c204eea22ee07154df928a5ff5350da03d7a.png" alt="image" style="zoom: 67%;" />
+![img](https://yqfile.alicdn.com/4e31c204eea22ee07154df928a5ff5350da03d7a.png)
 
 ### 不同域下的单点登录
 
